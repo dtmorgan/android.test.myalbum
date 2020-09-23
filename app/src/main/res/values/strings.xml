@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyAlbums</string>
+
+    <string name="loading_tracks_error">Error while loading tracks</string>
+    <string name="refresh">Refresh</string>
+    <string name="no_tracks">No tracks!</string>
+
+</resources>

@@ -1,0 +1,5 @@
+ext {
+    album_api = [
+        endpoint: '"https://static.leboncoin.fr/img/shared/"'
+    ]
+}

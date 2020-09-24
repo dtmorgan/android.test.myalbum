@@ -12,8 +12,7 @@ import com.mdiot.test.myalbums.R
 import timber.log.Timber
 
 class TracksViewModel @ViewModelInject constructor(
-    private val tracksRepository: TracksRepository,
-    @Assisted private val savedStateHandle: SavedStateHandle
+    private val tracksRepository: TracksRepository
 ) : ViewModel() {
 
     private val _items = MutableLiveData<List<Track>>()

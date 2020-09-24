@@ -7,6 +7,7 @@ import androidx.fragment.app.viewModels
 import com.google.android.material.snackbar.Snackbar
 import com.mdiot.test.myalbums.R
 import com.mdiot.test.myalbums.databinding.TracksFragmentBinding
+import com.mdiot.test.myalbums.utils.MarginItemDecoration
 import com.mdiot.test.myalbums.utils.setupSnackbar
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
@@ -39,6 +40,11 @@ class TracksFragment : Fragment() {
             }
             else -> false
         }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        viewDataBinding.rvItemList.setHasFixedSize(true)
+        viewDataBinding.rvItemList.addItemDecoration(MarginItemDecoration(resources.getDimension(R.dimen.list_item_padding).toInt()))
+    }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.tracks_fragment_menu, menu)

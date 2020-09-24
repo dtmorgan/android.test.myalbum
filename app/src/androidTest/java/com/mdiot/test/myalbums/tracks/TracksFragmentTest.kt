@@ -6,6 +6,7 @@ import androidx.test.core.app.ActivityScenario.launch
 import androidx.test.espresso.Espresso
 import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
+import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.MediumTest
 import com.mdiot.test.myalbums.R
@@ -22,7 +23,6 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import javax.inject.Inject
-import androidx.test.espresso.matcher.ViewMatchers.withText
 
 @RunWith(AndroidJUnit4::class)
 @MediumTest

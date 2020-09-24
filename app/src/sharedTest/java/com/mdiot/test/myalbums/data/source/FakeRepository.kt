@@ -3,10 +3,6 @@ package com.mdiot.test.myalbums.data.source
 import androidx.annotation.VisibleForTesting
 import com.mdiot.test.myalbums.data.Result
 import com.mdiot.test.myalbums.data.Track
-import kotlinx.coroutines.channels.Channel
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.consumeAsFlow
-import kotlinx.coroutines.runBlocking
 import javax.inject.Inject
 
 /**

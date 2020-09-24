@@ -2,7 +2,6 @@ package com.mdiot.test.myalbums.data.source
 
 import com.mdiot.test.myalbums.data.Result
 import com.mdiot.test.myalbums.data.Track
-import kotlinx.coroutines.flow.Flow
 
 class FakeDataSource(var tracks: MutableList<Track>? = mutableListOf()) : TracksDataSource {
 

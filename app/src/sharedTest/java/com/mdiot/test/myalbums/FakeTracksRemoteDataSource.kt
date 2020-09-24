@@ -3,9 +3,6 @@ package com.mdiot.test.myalbums
 import com.mdiot.test.myalbums.data.Result
 import com.mdiot.test.myalbums.data.Track
 import com.mdiot.test.myalbums.data.source.TracksDataSource
-import kotlinx.coroutines.channels.Channel
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.consumeAsFlow
 
 object FakeTracksRemoteDataSource : TracksDataSource {
 

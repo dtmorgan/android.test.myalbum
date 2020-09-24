@@ -2,8 +2,8 @@ package com.mdiot.test.myalbums.tracks
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.mdiot.test.myalbums.data.Track
 import com.mdiot.test.myalbums.databinding.TrackItemBinding

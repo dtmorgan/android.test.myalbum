@@ -1,14 +1,16 @@
 package com.mdiot.test.myalbums.tracks
 
-import androidx.hilt.Assisted
 import androidx.hilt.lifecycle.ViewModelInject
-import androidx.lifecycle.*
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.mdiot.test.myalbums.Event
+import com.mdiot.test.myalbums.R
 import com.mdiot.test.myalbums.data.Result
 import com.mdiot.test.myalbums.data.Track
 import com.mdiot.test.myalbums.data.source.TracksRepository
 import kotlinx.coroutines.launch
-import com.mdiot.test.myalbums.R
 import timber.log.Timber
 
 class TracksViewModel @ViewModelInject constructor(

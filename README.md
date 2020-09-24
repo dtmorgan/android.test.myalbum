@@ -1,7 +1,7 @@
 # MyAlbum
 MyAlbum is a small demo application based on MVVM architecture pattern and using common Android Application tech-stach.
 Application uses the library Dagger-Hilt for dependency injection.
-Fetched data from the nework are persisted into a database via repository pattern.
+Fetched data from the network are persisted into a database via repository pattern.
 
 ### Android Architecture Blueprint
 Architecture is strongly inspired from [android architecture blueprint](https://github.com/android/architecture-samples/tree/dev-hilt) based on [Hilt](https://developer.android.com/training/dependency-injection/hilt-android) for dependency Injection.

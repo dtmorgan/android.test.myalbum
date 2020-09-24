@@ -42,7 +42,7 @@ class TracksViewModelTest {
         val track3 = Track(4787, 3656, "title3", "url3", "thumbnailUrl3")
         tracksRepository.addTracks(track, track2, track3)
 
-        tracksViewModel = TracksViewModel(tracksRepository, SavedStateHandle())
+        tracksViewModel = TracksViewModel(tracksRepository)
     }
 
     @Test

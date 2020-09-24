@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="loading_tracks_error">Erreur pendant le chargement des musiques</string>
+    <string name="refresh">Actualiser</string>
+    <string name="no_tracks">Pas de musique disponible !</string>
+
+</resources>

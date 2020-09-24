@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyAlbums</string>
+    <string name="app_name" translatable="false">MyAlbums</string>
 
     <string name="loading_tracks_error">Error while loading tracks</string>
     <string name="refresh">Refresh</string>

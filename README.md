@@ -4,7 +4,7 @@ Application uses the library Dagger-Hilt for dependency injection.
 Fetched data from the nework are persisted into a database via repository pattern.
 
 ### Android Architecture Blueprint
-Architecture is strongly inspired from android architecture [android architecture blueprint](https://github.com/android/architecture-samples/tree/dev-hilt) based on [Hilt](https://developer.android.com/training/dependency-injection/hilt-android) for dependency Injection.
+Architecture is strongly inspired from [android architecture blueprint](https://github.com/android/architecture-samples/tree/dev-hilt) based on [Hilt](https://developer.android.com/training/dependency-injection/hilt-android) for dependency Injection.
 I advice you to take a look to architectures described in the github repository.
 
 ### Tech stack & Open-source libraries

@@ -21,6 +21,7 @@ I advice you to take a look to architectures described in the github repository.
   - Repository pattern
 - [Retrofit2 & OkHttp3](https://github.com/square/retrofit) - construct the REST APIs and paging network data.
 - [Jackson](https://github.com/FasterXML/jackson-core) - JSON library
+- [Timber](https://github.com/JakeWharton/timber) - logging.
 - [Material-Components](https://github.com/material-components/material-components-android) - Material design components like cardView.
 
 ### Architecture

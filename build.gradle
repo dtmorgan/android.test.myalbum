@@ -33,7 +33,7 @@ task clean(type: Delete) {
 
 ext {
     //Sdk and tools
-    minSdkVersion = 21
+    minSdkVersion = 19
     devminSdkVersion = 21
     targetSdkVersion = 28
     compileSdkVersion = 28
@@ -85,5 +85,6 @@ ext {
     androidXTestExtKotlinRunnerVersion = '1.1.2'
     androidXTestRulesVersion = '1.2.0'
 
+    multiDexVersion = '2.0.1'
     dexMakerVersion = '2.12.1'
 }

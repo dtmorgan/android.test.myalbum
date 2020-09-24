@@ -9,11 +9,7 @@ import kotlinx.coroutines.flow.consumeAsFlow
 
 object FakeTracksRemoteDataSource : TracksDataSource {
 
-    private val tracksChannel = Channel<Result<List<Track>>>()
-
     private var tracksServiceData: MutableMap<Int, Track> = mutableMapOf()
-
-    override suspend fun observeTracks(): Flow<Result<List<Track>>> = tracksChannel.consumeAsFlow()
 
     override suspend fun getTracks(): Result<List<Track>> {
         return Result.Success(tracksServiceData.values.toList())

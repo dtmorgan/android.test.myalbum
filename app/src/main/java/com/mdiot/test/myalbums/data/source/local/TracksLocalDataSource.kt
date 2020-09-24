@@ -13,12 +13,6 @@ class TracksLocalDataSource internal constructor(
     private val ioDispatcher: CoroutineDispatcher
 ) : TracksDataSource {
 
-    override suspend fun observeTracks(): Flow<Result<List<Track>>> = withContext(ioDispatcher) {
-        return@withContext tracksDao.observeTracks().map {
-            Result.Success(it)
-        }
-    }
-
     override suspend fun getTracks(): Result<List<Track>> = withContext(ioDispatcher) {
         return@withContext try {
             Result.Success(tracksDao.getTracks())

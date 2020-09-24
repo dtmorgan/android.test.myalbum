@@ -6,10 +6,6 @@ import kotlinx.coroutines.flow.Flow
 
 class FakeDataSource(var tracks: MutableList<Track>? = mutableListOf()) : TracksDataSource {
 
-    override suspend fun observeTracks(): Flow<Result<List<Track>>> {
-        TODO("not implemented")
-    }
-
     override suspend fun getTracks(): Result<List<Track>> {
         tracks?.let { return Result.Success(ArrayList(it)) }
         return Result.Error(

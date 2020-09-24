@@ -13,11 +13,6 @@ class TracksRemoteDataSource internal constructor(
     private val ioDispatcher: CoroutineDispatcher
 ) : TracksDataSource {
 
-    override suspend fun observeTracks(): Flow<Result<List<Track>>> {
-        //Can't observe tracks with remote API
-        return emptyFlow()
-    }
-
     override suspend fun getTracks(): Result<List<Track>> = withContext(ioDispatcher) {
         return@withContext try {
             Result.Success(tracksApi.getTracks())

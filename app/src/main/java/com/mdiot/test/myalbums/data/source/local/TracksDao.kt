@@ -15,14 +15,6 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface TracksDao {
 
-    /**
-     * Observes list of tracks.
-     *
-     * @return all tracks.
-     */
-    @Query("SELECT * FROM tracks")
-    fun observeTracks(): Flow<List<Track>>
-
     @Query("SELECT * FROM tracks")
     suspend fun getTracks(): List<Track>
 
